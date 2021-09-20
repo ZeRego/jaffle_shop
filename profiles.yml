@@ -1,0 +1,23 @@
+postgres-adapter-project:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      user: postgres
+      password: mysecretpassword
+      port: 5431
+      dbname: postgres
+      schema: my-schema
+      threads: 1
+      keepalives_idle: 0 # default 0, indicating the system default
+    prod:
+      type: postgres
+      host: 127.0.0.1
+      user: postgres
+      password: mysecretpassword
+      port: 5431
+      dbname: postgres
+      schema: my-prod-schema
+      threads: 1
+      keepalives_idle: 0 # default 0, indicating the system default
